@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/light_gray">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/your_logo_image"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/main_activity_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:text="Main Activity"
+        android:onClick="openMainActivity"/>
+
+    <TextView
+        android:id="@+id/note_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_activity_link"
+        android:text="Notes"
+        android:onClick="openNotes" />
+
+    <TextView
+        android:id="@+id/add_note_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_link"
+        android:text="Add/Edit Note"
+        android:onClick="openAddEditNote" />
+
+    <TextView
+        android:id="@+id/social_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_note_link"
+        android:text="Share on Social Media"
+        android:onClick="openSocial"/>
+
+    <TextView
+        android:id="@+id/google_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/social_link"
+        android:text="Visit my Google Developer Page"
+        android:onClick="openGooglePage"/>
+
+    <TextView
+        android:id="@+id/privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/google_link"
+        android:text="Privacy Policy"
+        android:onClick="openPrivacyPolicy"/>
+
+</RelativeLayout>
